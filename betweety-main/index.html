@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head> <!--where there is info about site and where you load js and css files-->
+        <meta charset="utf-8"> <!--helps translate words into computer language-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--allows the site to format any device-->
+        <title>Betweety</title> <!--establishes the title of the site-->
+        <link rel="stylesheet" href="./styles/styles.css"> <!--retrieves the styles from css file-->
+        <script async src='./javascript/date.js'></script>
+        <script async src="./javascript/response.js"></script> <!--retrieves the date from js file-->
+    </head>
+
+    <body> <!--main content on the page-->
+        <div class ="loginbox">
+            <img src="avatar.jpg" class="avatar">
+            <h1>Login Here</h1>
+            <form>
+                <p>Username</p>
+                <input type="text" name="" placeholder="Enter Username">
+                <p>Password</p>
+                <input type="password" name="" placeholder="Enter Password">
+                <input type="submit" name="" value="login">
+                <a href="#">Lost your password?</a><br>
+                <a href="#">Don't have an account?</a>
+
+            </form>
+        </div>
+
+        <div class="main">
+            <h1>Welcome to Betweety</h1> <!--header (highest priority)-->
+            <h4 id='date'></h4> <!--creates date variable into text-->
+            <h3>Response:</h3>
+            <input id="userResponse"> <br> <br>
+            <button id="myText" onclick="submit()"> Submit </button>
+            <h3 id="usersText"></h3>
+        </div>
+    </body>
+</html>
